@@ -4,4 +4,7 @@
   </head>
   <body bgcolor="#ffffff" style="background-color: #ffffff"></body>
   <h1>Welcome to the Hello page.</h1>
+  {% for order in orders %}
+  <li>{{order.id}} - {{order.customer.first_name}}</li>
+  {% endfor %}
 </html>
